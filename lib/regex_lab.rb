@@ -17,7 +17,9 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   text.match(/"\b[A-Z]+[a-z]+"/) ? true : false
 end
-
+      correct_punctuation = "I stepped on a Corn Flake, now I'm a cereal killer."
+      binding.pry 
+      first_word_capitalized_and_ends_with_punctuation(correct_punctuation)
 def valid_phone_number?(phone)
   phone.match() ? true : false
 end
